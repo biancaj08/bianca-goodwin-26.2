@@ -105,5 +105,23 @@ h2 {
     flex: 1;
 }
 
+#skills ul{
+    display: flex; 
+    font-size: 10px;
+    list-style:none;
+    background: #3399ff;
+    padding: 5px;
+}
+
+#skills ul li{
+    background: cce5ff;
+    color: darkblue;
+    padding: 2px;
+    margin: 2px;
+    list-style-type: none;
+    flex: 1;
+}
+
+
 
 

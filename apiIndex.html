@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<htm lang = "en">
+    <head>
+            <title>Weather Forecast</title> 
+            <meta charset="UTF-8">
+            <meta name="description" content="Weather Forecast Website">
+            <meta name="keywords" content="Weather, Forecast">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Bianca Goodwin">
+            <link rel="stylesheet" href="css/apiIndex.css">
+    </head>
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#temp"> Temperature</a></li>
+                <li><a href="#condition">Weather Condition</a></li>
+            </ul>
+        </nav>
+        <section id="title">
+            <h1>Weather Forecast in Raleigh</h1>
+        </section>
+        <div class="card">
+            <section id ="temp">
+            <div class="search1">
+               <input type="text" placeholder="ask about the temperature" 
+                 spellcheck="false">
+                 <section class = "button">
+                    <button><img src="images/search.png" alt="search icon"></button>
+                 </section> 
+            </div>
+        </section>
+            <div class="weather1">
+                <img src="images/drizzle.png" class="weather-icon">
+                <section id="temperature result">
+                    <h2></h2>
+                    <h1 class="weather condition"> Dress for the weather :)</h1>
+                </section>
+            </div>
+            <section id = "condition">
+            <div class="search2">
+                <input type="text" placeholder="ask about how it feels outside" 
+                  spellcheck="false">
+                  <section class = "button">
+                    <button><img src="images/search.png" alt="search icon"></button>
+                  </section>
+             </div>
+            </section>
+             <div class="weather1">
+                 <img src="images/mist.png" class="weather-icon">
+                 <section id="result">
+                    <h2></h2>
+                    <h1 class="weather condition">Rain or Shine have a great day!</h1>
+                 </section>
+             </div>
+        </div>
+        
+
+        <script src="js/APIindex.js"></script>
+    </body>
+</html>

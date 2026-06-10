@@ -59,7 +59,7 @@ messageForm.addEventListener("submit", (event) => {
 })
 let repositories = [];
 
-fetch('https://api.github.com/users/Startnow08/repos')
+fetch('https://api.github.com/users/biancaj08/repos')
 .then(response => {
     if (!response.ok) {
         throw new Error("Request failed");

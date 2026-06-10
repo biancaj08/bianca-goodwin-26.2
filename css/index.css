@@ -1,43 +1,43 @@
-
- /*phone*/
-@media (max-width: 600px) {
-    body {
-        margin: 6px;
-        color: darkblue;
-           }
-        header{
-            font-size: 6px;
-            color: gray;
-        }
-        #name{
-            font-size: 8px;
-            color: purple;
-        }
-        }
-
-/*tablet*/
-@media (max-width: 1200px) {
-    body {
-    margin: 8px;
-    color: white;
-       }
-    header{
-        font-size: 8px;
-        color: gray;
-    }
-    #name{
-        font-size: 10px;
-        color: pink;
-    }
-    }
-
-
 /*desktop style */
 body {
     background-color: lightblue;
     color: white;
     font-family: Helvetica, "Times New Roman", sans-serif;
-}
+
+
+    /*phone*/
+
+    @media (max-width: 600px) {
+        body {
+            margin: 6px;
+            color: darkblue;
+               }
+            header{
+                font-size: 6px;
+                color: gray;
+            }
+            #name{
+                font-size: 8px;
+                color: purple;
+            }
+            }
+        }
+
+    /*tablet*/
+    @media (max-width: 1200px) {
+        body {
+        margin: 8px;
+        color: white;
+           }
+        header{
+            font-size: 8px;
+            color: gray;
+        }
+        #name{
+            font-size: 10px;
+            color: pink;
+        }
+        }
 
 
 
@@ -45,21 +45,7 @@ section{
     margin: 10px;
     padding: 20px;
 }
-#navigation ul{
-  display: flex;
-  flex-direction: row;
-  background-color: #3399ff;
-  color: white;
-}
 
-#navigation ul li{
-    width: 25px;
-    height: 25px;
-    border-radius: 20%;
-    margin: 20px;
-    padding: 15px;
-    font-size: larger;
-  }
 #connect ul{
     display: flex; 
     flex-direction: row;
@@ -83,7 +69,7 @@ h1{
     font-family: sans-serif;
 }
 h2 {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     color:aliceblue;
 }
@@ -105,22 +91,22 @@ h2 {
     flex: 1;
 }
 
-#skills ul{
-    display: flex; 
-    font-size: 10px;
-    list-style:none;
-    background: #3399ff;
-    padding: 5px;
-}
+#navigation ul{
+    display: flex;
+    flex-direction: row;
+    background-color: #3399ff;
+    color: white;
+  }
+  
+  #navigation ul li{
+      width: 25px;
+      height: 25px;
+      border-radius: 20%;
+      margin: 20px;
+      padding: 15px;
+      font-size: larger;
+    }
 
-#skills ul li{
-    background: cce5ff;
-    color: darkblue;
-    padding: 2px;
-    margin: 2px;
-    list-style-type: none;
-    flex: 1;
-}
 
 
 

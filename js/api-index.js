@@ -1,4 +1,4 @@
-fetch('https://api.github.com/users/Startnow08/repos')
+fetch('https://api.github.com/users/biancaj08/repos')
 .then(response => {
     if (!response.ok) {
         throw new Error("Request failed");
@@ -12,7 +12,7 @@ fetch('https://api.github.com/users/Startnow08/repos')
     console.log("repositories: ", repositories);})
 
 
-const temperature = document.getElementById("temperature result");
+const temperature = document.getElementById("temperature-result");
 let result = document.getElementById("result");
 let weather;
 let temps;
@@ -41,8 +41,9 @@ const weatherCondition = fetch('https://api.openweathermap.org/data/2.5/weather?
     let weather = data.main.feels_like;
     console.log(weather);
     return weather;
+    result.innerHTML = weather;
     
- }).finally(result.innerHTML = weather)
+ }).finally()
 
 
 

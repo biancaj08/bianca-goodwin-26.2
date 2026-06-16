@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htm lang = "en">
+<html lang = "en">
     <head>
             <title>Weather Forecast</title> 
             <meta charset="UTF-8">
@@ -12,8 +12,9 @@
     <body>
         <nav id="navigation">
             <ul>
-                <li><a href="#temp"> Temperature</a></li>
+                <li><a href="#temp">Temperature</a></li>
                 <li><a href="#condition">Weather Condition</a></li>
+                <li><a href="index.html">Home Page</a></li>
             </ul>
         </nav>
         <section id="title">
@@ -24,23 +25,22 @@
             <div class="search1">
                <input type="text" placeholder="ask about the temperature" 
                  spellcheck="false">
-                 <section class = "button">
+                 <section id = "button1">
                     <button><img src="images/search.png" alt="search icon"></button>
                  </section> 
             </div>
         </section>
             <div class="weather1">
                 <img src="images/drizzle.png" class="weather-icon">
-                <section id="temperature result">
-                    <h2></h2>
-                    <h1 class="weather condition"> Dress for the weather :)</h1>
+                <section id="condition">
+                    <h2 class="weather condition">Dress for the weather</h2>
                 </section>
             </div>
             <section id = "condition">
             <div class="search2">
                 <input type="text" placeholder="ask about how it feels outside" 
                   spellcheck="false">
-                  <section class = "button">
+                  <section id = "button2">
                     <button><img src="images/search.png" alt="search icon"></button>
                   </section>
              </div>
@@ -48,13 +48,12 @@
              <div class="weather1">
                  <img src="images/mist.png" class="weather-icon">
                  <section id="result">
-                    <h2></h2>
-                    <h1 class="weather condition">Rain or Shine have a great day!</h1>
+                    <h2 class="weather condition">Rain or Shine have a great day!</h2>
                  </section>
              </div>
         </div>
         
 
-        <script src="js/APIindex.js"></script>
+        <script src="js/api-index.js"></script>
     </body>
 </html>

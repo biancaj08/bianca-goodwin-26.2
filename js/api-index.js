@@ -12,7 +12,7 @@ fetch('https://api.github.com/users/biancaj08/repos')
     console.log("repositories: ", repositories);})
 
 
-const temperature = document.getElementById("temperature-result");
+const temperature = document.getElementById("#condition h2")
 let result = document.getElementById("result");
 let weather;
 let temps;
@@ -23,14 +23,11 @@ let temps;
         throw new Error("Request failed");
     }
     return response.json();
-}).then(data => {
-    //console.log("data: ", data);
-     return temps = data.main.temp;
-    console.log(temps);  
+}).then(data =>  {
+     let temps = data.main.temp;
+     
+})
 
-   
-}
-).finally(temperature.innerHTML = temps);
 const weatherCondition = fetch('https://api.openweathermap.org/data/2.5/weather?q=Raleigh&appid=33333c9f0169b63ccdbac11f3b32f09c&units=imperial')
 .then(response => {
     if (!response.ok){
@@ -39,17 +36,33 @@ const weatherCondition = fetch('https://api.openweathermap.org/data/2.5/weather?
     return response.json();
  }).then(data => {
     let weather = data.main.feels_like;
-    console.log(weather);
-    return weather;
-    result.innerHTML = weather;
+    return weather; 
+    //console.log(weather);
+
     
- }).finally()
+ })
 
 
+//attach listener event listeners to your search buttons
 
 
+//const weatherButton = document.querySelector("search1");
+
+//d's value inside the  handlers
+
+let tempButton = document.getElementById("button1");
+
+tempButton.addEventListener('click', e => {
+
+console.log(temps);
+
+})
 
 
+let tempButton2 = document.getElementById("button2");
 
+tempButton.addEventListener('click', e => {
 
+console.log(weather);
 
+})
